@@ -1,0 +1,45 @@
+name: Update Record
+description: Update an existing user record in the database
+title: "[Update] Existing Record"
+labels: ["update"]
+body:
+  - type: input
+    id: record_id
+    attributes:
+      label: Record ID
+      description: Enter the ID of the record you want to update (must be your own record)
+      placeholder: "1"
+    validations:
+      required: true
+
+  - type: input
+    id: name
+    attributes:
+      label: Name
+      description: Enter your updated name
+      placeholder: "John Doe"
+    validations:
+      required: true
+
+  - type: input
+    id: state
+    attributes:
+      label: State
+      description: Enter your updated state
+      placeholder: "California"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: options
+    attributes:
+      label: Options
+      description: Select an updated option from the dropdown
+      options:
+        - "Option 1"
+        - "Option 2"
+        - "Option 3"
+        - "Other"
+    validations:
+      required: true
+

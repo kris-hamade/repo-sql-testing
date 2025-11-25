@@ -1,0 +1,24 @@
+{
+  "name": "repo-sql-testing",
+  "version": "1.0.0",
+  "description": "Node.js project with SQLite database and GitHub Actions for processing issues",
+  "main": "process-issue.js",
+  "scripts": {
+    "test": "node test-db.js",
+    "process": "node process-issue.js"
+  },
+  "keywords": [
+    "sqlite",
+    "github-actions",
+    "issues"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "better-sqlite3": "^9.2.2",
+    "@actions/core": "^1.10.1",
+    "@actions/github": "^6.0.0"
+  },
+  "devDependencies": {}
+}
+

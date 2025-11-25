@@ -1,0 +1,36 @@
+name: Create Record
+description: Create a new user record in the database
+title: "[Create] New Record"
+labels: ["create"]
+body:
+  - type: input
+    id: name
+    attributes:
+      label: Name
+      description: Enter your name
+      placeholder: "John Doe"
+    validations:
+      required: true
+
+  - type: input
+    id: state
+    attributes:
+      label: State
+      description: Enter your state
+      placeholder: "California"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: options
+    attributes:
+      label: Options
+      description: Select an option from the dropdown
+      options:
+        - "Option 1"
+        - "Option 2"
+        - "Option 3"
+        - "Other"
+    validations:
+      required: true
+
