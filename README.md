@@ -33,6 +33,8 @@ npm install
 
 3. The database will be automatically created on first run. The database file `data.db` will be created in the project root.
 
+**Note**: The `data.db` file is tracked in git and will be committed to the repository. The GitHub Actions workflow automatically commits database changes after processing each issue.
+
 ## Database Schema
 
 The SQLite database contains a `users` table with the following schema:

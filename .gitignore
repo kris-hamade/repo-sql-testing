@@ -1,5 +1,7 @@
 node_modules/
+# Allow data.db to be committed, but ignore other .db files
 *.db
+!data.db
 *.db-journal
 .env
 .DS_Store
